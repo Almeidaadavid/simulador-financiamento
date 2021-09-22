@@ -3,28 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <title>Simulação de Financiamento</title>
   </head>
   <body>
     <form class="form">
-      <div class="main">
+      <div>
         <h2>Simulação de Financiamento</h2>
         <div class="container">
-          <div class="valorFinan">
-            <label for="valorFinanciamento">Valor : <br /></label>
-            <input type="number" id="valorFinanciamento" />
+          <div>
+            <label
+              >Valor : <br /><input
+                type="number"
+                id="valorFinanciamento"
+                value="200000"
+            /></label>
           </div>
-
-          <div class="prazoFinan">
-            <label for="anosFinanciamento">Prazo(anos) : <br /></label>
-            <input type="number" id="anosFinanciamento" />
+          <div>
+            <label
+              >Prazo(anos) : <br /><input
+                type="number"
+                id="anosFinanciamento"
+                value="20"
+            /></label>
           </div>
-
-          <div class="jurosAno">
-            <label for="jurosAnual">Juros ao ano : <br /> </label>
-            <input type="number" id="jurosAnual" />
+          <div>
+            <label
+              >Juros ao ano : <br /><input
+                type="number"
+                id="jurosAnual"
+                value="0.08"
+            /></label>
           </div>
         </div>
 
@@ -33,37 +43,47 @@
         <h2>Resultado</h2>
 
         <div class="container-inferior">
-          <div class="prazoMeses">
-            <label for="prazoMeses">Prazo (meses) : <br /></label>
-            <input type="number" disabled="true" id="prazoMeses" />
+          <div>
+            <label
+              >Prazo (meses) : <br /><input
+                type="number"
+                readonly
+                id="prazoMeses"
+            /></label>
           </div>
 
-          <div class="jurosMes">
-            <label for="jurosMensal">Juros ao mês: <br /></label>
-            <input type="number" disabled="true" id="jurosMensal" />
+          <div>
+            <label
+              >Juros ao mês: <br /><input
+                type="number"
+                readonly
+                id="jurosMensal"
+            /></label>
           </div>
-
-          <div class="jurosAcumulado">
-            <label for="jurosAcumulado">Juros Acumulado <br /></label>
-            <input type="number" disabled="true" id="jurosAcumulado" />
+          <div>
+            <label
+              >Juros Acumulado <br /><input
+                type="number"
+                readonly
+                id="jurosAcumulado"
+            /></label>
           </div>
         </div>
       </div>
     </form>
     <div>
-    <table>
-      <thead>
-        <tr>
-          <th>Prestação</th>
-          <th>Amortização</th>
-          <th>Juros</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody id="rows">
-      </tbody>
-    </table>
-  </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Prestação</th>
+            <th>Amortização</th>
+            <th>Juros</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>

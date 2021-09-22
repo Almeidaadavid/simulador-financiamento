@@ -35,7 +35,6 @@ function calcularJurosAcumulado(amortizacao, valorFinan, mes, jurosMensal) {
   }
   return jurosTotal.toFixed(2);
 }
-
 // Tabela;
 
 function addData(amortizacao, valorFinan) {
